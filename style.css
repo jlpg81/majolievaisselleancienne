@@ -48,6 +48,13 @@ html,body {
     padding: 1em;
 }
 
+/* Photos */
+
+.photos img{
+    width: 200px;
+    padding: 10px;
+}
+
 /*Contact Form*/
 
 .contact_form{
