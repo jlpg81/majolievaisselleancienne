@@ -29,7 +29,6 @@ html,body {
     display: inline;
 }
 
-
 .navbar ul li a:hover
 {
     color: #fff;
@@ -44,7 +43,7 @@ html,body {
 .logo{
     font-family: 'Charmonman', cursive;
     text-align: center;
-    font-size: 7em;
+    font-size: 3em;
     padding: 1em;
 }
 
