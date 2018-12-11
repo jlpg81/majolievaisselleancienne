@@ -1,12 +1,8 @@
-                <form class="" method="post" action="contact-form-handler.php">
-                    <input name="name" class="form-control" type="text" placeholder="Votre nom" required><br>
-                    <input name="email" class="form-control" type="text" placeholder="Votre email" required><br>
-                    <textarea name="message" class="form-control" placeholder="Votre message" required rows="4"></textarea><br>
-                    <input type="submit" class="form-control submit" value="Envoyer">
-                <form action="http://formspree.io/jlpg81@email.com"><input type="email" name="_replyto"><textarea   name="body"></textarea><input type="submit" value="Send"></form>
-                </form>
-                <form action="https://formspree.io/jlpg81@email.com" method="POST">
-                    <input type="text" name="name">
-                    <input type="email" name="_replyto">
-                    <input type="submit" value="Send">
-                </form>
+
+
+
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-shrink:1 ;
+    width: 200px;
+    height: auto;
