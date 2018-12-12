@@ -1,8 +1,0 @@
-
-
-
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex-shrink:1 ;
-    width: 200px;
-    height: auto;
