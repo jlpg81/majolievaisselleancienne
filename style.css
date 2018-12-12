@@ -43,7 +43,7 @@ html,body {
 .logo{
     font-family: 'Charmonman', cursive;
     text-align: center;
-    font-size: 3em;
+    font-size: 5em;
     padding: 1em;
 }
 
@@ -54,21 +54,6 @@ img{
     padding: 10px;
 }
 
-/*
-.photo_container{
-    display:flex;
-    justify-content: center;
-    flex-flow: row wrap;
-}
-
-.photo {
-    flex: auto;
-    height: 250px;
-    min-width: 150px;
-    margin: 0 8px 8px 0;
-}
-
-*/
 .photo_container {
     border-top: #808588 solid;
     column-count: 4;
@@ -84,11 +69,18 @@ img{
     margin: 0 0 1.5em;
     width: 100%;
 }
+
 .photo:hover{
-    animation: grew 5s;
+    animation: grew .25s;
     transform: scale(1.2);
 }
-
+@keyframes grew {
+    from {
+        transform: scale(1);
+    } to {
+        transform: scale(1.2);
+    }
+}
 /*Contact Form*/
 
 .contact_form{
