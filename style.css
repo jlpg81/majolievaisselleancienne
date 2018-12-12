@@ -16,7 +16,7 @@ html,body {
     margin: 0;
     padding: 0;
     background:white;
-    position:fixed;
+    position: fixed;
     top:0;
     z-index: 999;
 }
@@ -24,8 +24,16 @@ hr{
     margin: 0;
 }
 @media only screen and (max-width:700px) {
-    hr{
+    .navbar{
+        width: 100%;
+        font-family: 'Charmonman', cursive;
+        text-align: center;
         margin: 0;
+        padding: 0;
+        background:white;
+        position:top;
+        top:0;
+        z-index: 999;
     }
 }
 .navbar a{
@@ -34,6 +42,11 @@ hr{
     padding: 0 5%;
 }
 @media only screen and (max-width:700px) {
+    .navbar a{
+        font-size: 1.4em;
+    }
+}
+@media only screen and (max-width:448px) {
     .navbar a{
         font-size: 1em;
     }
@@ -71,17 +84,23 @@ hr{
 }
 @media only screen and (max-width:448px) {
     .logo{
+        padding-top: 2em;
         font-size: 1.5em;
     }
 }
 
 /* Photos */
-
+@keyframes grew {
+    from {
+        transform: scale(1);
+    } to {
+        transform: scale(1.2);
+    }
+}
 img{
     width: 100%;
     padding: 10px;
 }
-
 .photo_container {
     border-top: #808588 solid;
     column-count: 4;
@@ -89,7 +108,15 @@ img{
     margin: 1em auto;
     column-gap: 0.5em;
 }
-
+@media only screen and (max-width:448px) {
+    .photo_container {
+        border-top: #808588 solid;
+        column-count: 3;
+        padding: 0.1em;
+        margin: 1em auto;
+        column-gap: 0.5em;
+    }
+}
 .photo{
     background-color: #eee;
     display: inline-block;
@@ -97,16 +124,23 @@ img{
     margin: 0 0 0.5em;
     width: 100%;
 }
-
 .photo:hover{
     animation: grew .25s;
     transform: scale(1.2);
 }
-@keyframes grew {
-    from {
-        transform: scale(1);
-    } to {
-        transform: scale(1.2);
+@media only screen and (max-width:448px) {
+    .photo:hover{
+        animation: grew .25s;
+        transform: scale(2);
+    }
+}
+@media only screen and (max-width:448px) {
+    @keyframes grew {
+        from {
+            transform: scale(1);
+        } to {
+            transform: scale(2);
+        }
     }
 }
 /*Contact Form*/
@@ -118,7 +152,7 @@ img{
     background-color: #808588;
     border: 2px solid black;
     border-radius: 25px;
-    margin: 0    10% 5em 10%;
+    margin: 0 10% 5em 10%;
 }
 @media only screen and (max-width:700px) {
     .contact_form{
@@ -128,7 +162,7 @@ img{
         background-color: #808588;
         border: 2px solid black;
         border-radius: 25px;
-        margin: 0;
+        margin: 0 5% 5% 5%;
     }
 }
 .form-control{
