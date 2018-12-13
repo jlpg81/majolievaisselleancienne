@@ -19,6 +19,8 @@ html,body {
     position: fixed;
     top:0;
     z-index: 999;
+    border-bottom: 1px solid #000;
+    
 }
 hr{
     margin: 0;
@@ -34,6 +36,7 @@ hr{
         position:top;
         top:0;
         z-index: 999;
+        border-bottom: 1px solid #000;
     }
 }
 .navbar a{
@@ -54,6 +57,7 @@ hr{
 
 .navbar ul{
     padding: 0;
+    width: 100%;
 }
 
 .navbar_name{
@@ -69,7 +73,9 @@ hr{
 .active{
     text-decoration: underline;
 }
-
+ol, ul{
+    margin-bottom: 0px;
+}
 /* Logo */
 .logo{
     font-family: 'Charmonman', cursive;
